@@ -55,7 +55,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
                     ratingSurvey5: 'O que você mais gostou?',
                     items: [
                       RatingCriterionModel(id: 1, name: 'Qualidade do atendimento'),
-                      RatingCriterionModel(id: 2, name: 'Competência do atendente'),
+                      RatingCriterionModel(id: 2, name: 'Competência dos atendentes'),
                       RatingCriterionModel(id: 3, name: 'Limpeza do ambiente'),
                       RatingCriterionModel(id: 4, name: 'Tempo de espera'),
                     ],
@@ -87,7 +87,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
                     ratingSurvey5: 'O que você mais gostou?',
                     items: [
                       RatingCriterionModel(id: 1, name: 'Qualidade do atendimento'),
-                      RatingCriterionModel(id: 2, name: 'Competência do atendente'),
+                      RatingCriterionModel(id: 2, name: 'Competência dos atendentes'),
                       RatingCriterionModel(id: 3, name: 'Limpeza do ambiente'),
                       RatingCriterionModel(id: 4, name: 'Tempo de espera'),
                     ],
@@ -116,7 +116,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
                     ratingSurvey5: 'O que você mais gostou?',
                     items: [
                       RatingCriterionModel(id: 1, name: 'Qualidade do atendimento'),
-                      RatingCriterionModel(id: 2, name: 'Competência do atendente'),
+                      RatingCriterionModel(id: 2, name: 'Competência dos atendentes'),
                       RatingCriterionModel(id: 3, name: 'Limpeza do ambiente'),
                       RatingCriterionModel(id: 4, name: 'Tempo de espera'),
                     ],
@@ -148,7 +148,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
                       ratingSurvey5: 'O que você mais gostou?',
                       items: [
                         RatingCriterionModel(id: 1, name: 'Qualidade do atendimento'),
-                        RatingCriterionModel(id: 2, name: 'Competência do atendente'),
+                        RatingCriterionModel(id: 2, name: 'Competência dos atendentes'),
                         RatingCriterionModel(id: 3, name: 'Limpeza do ambiente'),
                         RatingCriterionModel(id: 4, name: 'Tempo de espera'),
                       ],
