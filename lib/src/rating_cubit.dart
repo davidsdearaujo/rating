@@ -4,7 +4,6 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import 'models/rating_criterion_model.dart';
-import 'models/rating_model.dart';
 import 'rating_state.dart';
 
 export 'rating_state.dart';
@@ -15,9 +14,8 @@ typedef SaveRatingCallback = Future<void> Function(int rate, List<RatingCriterio
 class RatingCubit extends Cubit<RatingState> {
   final IgnoreForEverCallback _ignoreForEverCallback;
   final SaveRatingCallback _saveRatingCallback;
-  final RatingModel model;
 
-  RatingCubit(this.model, this._ignoreForEverCallback, this._saveRatingCallback) : super(IdleState());
+  RatingCubit(this._ignoreForEverCallback, this._saveRatingCallback) : super(IdleState());
 
   final selectedCriterions = <RatingCriterionModel>{};
 

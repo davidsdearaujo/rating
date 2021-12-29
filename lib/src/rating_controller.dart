@@ -18,7 +18,7 @@ abstract class RatingController {
   Future<void> ignoreForEverCallback();
   Future<void> saveRatingCallback(int rate, List<RatingCriterionModel> selectedCriterions);
 
-  late final RatingCubit ratingCubit = RatingCubit(ratingModel, ignoreForEverCallback, saveRatingCallback);
+  late final RatingCubit ratingCubit = RatingCubit(ignoreForEverCallback, saveRatingCallback);
 
   _RatingListenHelper? _ratingListenHelper;
   void listenStateChanges(BuildContext context) {
