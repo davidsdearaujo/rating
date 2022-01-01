@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-
+import 'package:easy_localization/easy_localization.dart';
 import 'rating_controller.dart';
 import 'rating_cubit.dart';
 import 'widgets/criterion_button_widget.dart';
@@ -18,7 +18,7 @@ class RatingWidget extends StatefulWidget {
 class _RatingWidgetState extends State<RatingWidget> {
   final animationDuration = const Duration(milliseconds: 800);
   final animationCurve = Curves.ease;
-
+  var review = tr('submit'),
   int selectedRate = 0;
   late RatingController controller = widget.controller;
 
@@ -138,7 +138,7 @@ class _RatingWidgetState extends State<RatingWidget> {
                       opacity: selectedRate == 0 ? 0 : 1,
                       child: Center(
                         child: DefaultButton.text(
-                          "CONFIRMAR",
+                          "submit",
                           textColor: Colors.white,
                           color: Theme.of(context).colorScheme.secondary,
                           outlineColor: Theme.of(context).colorScheme.secondary,
@@ -163,9 +163,9 @@ class _RatingWidgetState extends State<RatingWidget> {
                             onPressed: () => controller.ratingCubit.ignoreForEver(),
                             isLoading: isLoading,
                             child: const Text(
-                              "Prefiro não classificar",
+                              "back",
                               style: TextStyle(decoration: TextDecoration.underline, color: Colors.black54, fontSize: 12),
-                            ),
+                            ).tr(),
                           ),
                         ),
                       ),
